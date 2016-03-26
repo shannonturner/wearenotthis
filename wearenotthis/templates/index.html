@@ -100,6 +100,11 @@
         color: white;
       }
 
+      .supporter {
+        margin-top: 1em;
+        margin-bottom: 1em;
+      }
+
       .supporter-image {
         max-height: 150px;
         width: auto;
@@ -173,10 +178,10 @@
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <!-- <h4 class="modal-title text-center" id="myModalLabel-{{ forloop.counter0 }}">{{ supporter.name }}</h4> -->
-            <img src="{{ supporter.logo }}" class="img-responsive centered" alt="{{ supporter.name }}" title="{{ supporter.name }}">
+            <img src="{{ supporter.logo }}" class="supporter-image img-responsive centered" alt="{{ supporter.name }}" title="{{ supporter.name }}">
           </div>
           <div class="modal-body text-center">
-            <blockquote><h2 style="display: inline;">&ldquo;</h2>{{ supporter.support_snippet }}<h2 style="display: inline;">&rdquo;</h2></blockquote>
+            <blockquote><b style="display: inline;">&ldquo;</b>{{ supporter.support_snippet }}<b style="display: inline;">&rdquo;</b></blockquote>
           </div>
           <div class="modal-footer">
             <a href="{{ supporter.link }}" target="_blank">Source</a>
