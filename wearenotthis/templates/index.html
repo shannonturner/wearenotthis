@@ -103,6 +103,10 @@
         color: white;
       }
 
+      #supporters {
+        width: 90%;
+      }
+
       .supporter {
         margin-top: 1em;
         margin-bottom: 1em;
@@ -155,7 +159,7 @@
 
   </div>
 
-  <div class="row">
+  <div id="supporters" class="row centered">
     {% for supporter in supporters %}
       <div class="supporter col-lg-4 text-center">
         <a href="#" data-toggle="modal" data-target="#modal-{{ forloop.counter0 }}">
