@@ -147,11 +147,11 @@
 
   <h3 id="tagline" class="tagline">These companies showed their support of the trans community by speaking out against North Carolina's HB 2.</h3>
 
-  <h5 class="tagline"><i>Click on a company to see their statement.</i></h4>
+  <h5 class="tagline"><i>Click on a company to see their statement.</i></h5>
 
   <div id="supporters" class="row centered">
     {% for supporter in supporters %}
-      <div class="supporter col-xs-4 text-center">
+      <div class="{% cycle 'row ' ' ' ' ' %}supporter col-xs-4 text-center">
         <a href="#" data-toggle="modal" data-target="#modal-{{ forloop.counter0 }}">
           <img src="{{ supporter.logo }}" class="supporter-image img-responsive centered" alt="{{ supporter.name }}" title="{{ supporter.name }}">
           <!-- {{ supporter.name }} -->
@@ -160,11 +160,13 @@
     {% endfor %}
   </div>
 
-<div class="container-fluid text-center footer">
+  <div class="container-fluid text-center footer">
 
-  <h3>Made by <a class="footer-link" href="https://shannonvturner.com" target="_blank">Shannon Turner</a>, with love for all of my trans sisters</h3>
+    <h3>Made by <a class="footer-link" href="https://shannonvturner.com" target="_blank">Shannon Turner</a>, with love for all of my trans sisters</h3>
 
-</div>
+  </div>
+
+</div> <!-- /div.row.container-fluid.text-center -->
 
   <!-- BEGIN MODALS -->
 
