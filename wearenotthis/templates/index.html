@@ -118,8 +118,15 @@
       }
 
       .supporter-image {
-        height: 120px;
+        height: 75px;
         width: auto;
+      }
+
+      @media only screen and (max-width: 767px) {
+        .supporter-image {
+          max-width: 100%;
+          height: auto;
+        }
       }
 
       #share-row {
